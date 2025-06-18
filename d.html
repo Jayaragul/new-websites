@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Sastra - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+
+    header {
+      background: linear-gradient(to right, #000, #0f172a, #000);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #3b82f6;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: #3b82f6;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero a {
+      background-color: #3b82f6;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #2563eb;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #60a5fa;
+      margin-bottom: 2rem;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #111;
+      border: 1px solid #3b82f6;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 12px #3b82f6;
+    }
+
+    .card h4 {
+      color: #60a5fa;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .cta {
+      background-color: #2563eb;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h4 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta a {
+      background-color: #fff;
+      color: #2563eb;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .about {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .about-text {
+        flex: 1;
+        padding-right: 2rem;
+      }
+
+      .about img {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Code Sastra</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>We Code. You Scale.</h2>
+    <p>Custom Software | AI Solutions | Scalable Web Apps</p>
+    <a href="#contact">Let’s Build Together</a>
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">Who We Are</h3>
+    <div class="about">
+      <div class="about-text">
+        <p>At Code Sastra, we blend creativity and code to solve real-world problems. Our passionate team builds modern software, guided by innovation and integrity.</p>
+        <br>
+        <a href="#" style="color:#3b82f6; text-decoration: underline;">Learn More</a>
+      </div>
+      <img src="93643bb3-830c-4168-8a92-1c8dbf64bf2d.jpg" alt="Team" />
+    </div>
+  </section>
+
+  <section id="services">
+    <h3 class="section-title">Our Services</h3>
+    <div class="services">
+      <div class="card">
+        <h4>AI/ML Solutions</h4>
+        <p>Building intelligent systems using deep learning, NLP, and computer vision.</p>
+      </div>
+      <div class="card">
+        <h4>Web Development</h4>
+        <p>High-performance, responsive web apps crafted for growth and speed.</p>
+      </div>
+      <div class="card">
+        <h4>Mobile Applications</h4>
+        <p>Cross-platform mobile experiences using Flutter and React Native.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h3 class="section-title">Our Projects</h3>
+    <div class="portfolio">
+      <div class="card">
+        <img src="Gemini_Generated_Image_uatdpxuatdpxuatd.png" style="width:100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h4>HealthAI</h4>
+        <p>AI chatbot for hospital automation</p>
+      </div>
+      <div class="card">
+        <img src="Gemini_Generated_Image_2o69ql2o69ql2o69.png" style="width:100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h4>EduKart</h4>
+        <p>E-learning platform for students</p>
+      </div>
+      <div class="card">
+        <img src="3.png" style="width:100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h4>FleetTrack</h4>
+        <p>Fleet management web dashboard</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h4>Ready to bring your ideas to life?</h4>
+    <a href="#contact">Contact Us</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Code Sastra. All rights reserved.
+  </footer>
+
+</body>
+</html>
